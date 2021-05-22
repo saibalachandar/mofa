@@ -16,7 +16,7 @@ html {
 /* typegraphy */
 body {
   font-family: Inter, Arial, Helvetica, sans-serif;
-  background: var(--color-body);
+  /* background: var(--color-body); */
   font-size: 2.4rem;
   line-height: 1.5;
 }
@@ -53,4 +53,22 @@ p {
   h3 {
     font-size: 2.4rem;
   }
+}
+/* icon */
+.icon {
+  width: 40px;
+  height: 40px;
+}
+.icon--primary {
+  color: var(--color-primary);
+}
+
+.icon-container {
+  background: #f3f9fa;
+  width: 64px;
+  height: 64px;
+  border-radius: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
