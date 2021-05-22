@@ -2,6 +2,9 @@
   --color-primary: #fc5c7d;
   --color-body: #041440;
   --color-background: #3333;
+  --color-fixed: #01040d;
+  --color--light: #051130;
+  --color-secondary: #ff676d;
 }
 html {
   font-size: 62.5%;
@@ -16,8 +19,9 @@ html {
 /* typegraphy */
 body {
   font-family: Inter, Arial, Helvetica, sans-serif;
-  /* background: var(--color-body); */
+
   font-size: 2.4rem;
+  height: 100vh;
   line-height: 1.5;
 }
 a {
@@ -71,4 +75,44 @@ p {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  background: line;
 }
+/* btn */
+.btn {
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 2rem 3rem;
+  border: 0;
+  border-radius: 40px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.btn--primary {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+.btn--primary:hover {
+  background: #fd24c7;
+}
+@media screen and (min-width: 1025px) {
+  .btn {
+    font-size: 1.5rem;
+  }
+}
+
+/* grid */
+.grid {
+  display: grid;
+}
+@media screen and (min-width: 768px) {
+  .grid--1x2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .grid--1x3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+/* card */
