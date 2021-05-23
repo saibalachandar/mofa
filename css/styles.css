@@ -1,7 +1,7 @@
 :root {
   --color-primary: #fc5c7d;
   --color-body: #041440;
-  --color-background: #3333;
+  --color-back: #3333;
   --color-fixed: #01040d;
   --color--light: #051130;
   --color-secondary: #ff676d;
@@ -19,7 +19,7 @@ html {
 /* typegraphy */
 body {
   font-family: Inter, Arial, Helvetica, sans-serif;
-
+  background: var(--color-fixed);
   font-size: 2.4rem;
   height: 100vh;
   line-height: 1.5;
@@ -75,7 +75,6 @@ p {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  background: line;
 }
 /* btn */
 .btn {
@@ -116,3 +115,104 @@ p {
   }
 }
 /* card */
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.maincard {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+.card {
+  width: 300px;
+  height: 500px;
+  margin: 30px 20px;
+  /* overflow: hidden; */
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 40px 0;
+  background: #000;
+  color: #fff;
+  position: relative;
+  transition: transform 0.5s ease-out;
+}
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card::before {
+  content: "";
+  left: -25px;
+  background-color: var(--color--light);
+  bottom: -5px;
+  width: 30px;
+  height: 5px;
+  position: absolute;
+  color: #000;
+  transform: rotate(90deg);
+}
+
+.card::after {
+  content: "";
+  left: -12px;
+  background-color: var(--color--light);
+  bottom: -18px;
+  width: 30px;
+
+  height: 5px;
+  position: absolute;
+}
+
+.team__img {
+  width: 100%;
+  height: 270px;
+  object-fit: cover;
+  clip-path: polygon(0% 0%, 100% 0, 100% 70%, 0 100%, 0% 100%);
+}
+
+.team__member {
+  text-align: right;
+  margin: 0 20px;
+  font-size: 4rem;
+  white-space: nowrap;
+}
+
+.man--modified {
+  font-size: 3.5rem;
+}
+.team__work {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 200;
+  margin: 0;
+  white-space: nowrap;
+}
+.card__develop {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 0 10px;
+  opacity: 0.4;
+  text-align: center;
+}
+.social__icon {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+.social__icon .icon {
+  margin: 0 2rem;
+  width: 2rem;
+  cursor: pointer;
+  transition: transform 0.4s ease-out;
+}
+
+.link:hover .icon {
+  color: #fff;
+  transform: rotate(360deg);
+}
+.team__member span {
+  color: rgb(7, 255, 243);
+}
+/* Services */
