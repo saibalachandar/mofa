@@ -5,6 +5,7 @@
   --color-fixed: #01040d;
   --color--light: #051130;
   --color-secondary: #ff676d;
+  --color-modified: #00d9ff;
 }
 html {
   font-size: 62.5%;
@@ -66,7 +67,9 @@ p {
 .icon--primary {
   color: var(--color-primary);
 }
-
+.icon--secondary {
+  color: rgb(9, 40, 126);
+}
 .icon-container {
   background: #f3f9fa;
   width: 64px;
@@ -125,6 +128,7 @@ p {
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 2rem;
+  background: #fff;
 }
 .card {
   width: 300px;
@@ -212,15 +216,18 @@ p {
   color: #fff;
   transform: rotate(360deg);
 }
-.team__member span {
-  color: rgb(7, 255, 243);
+span {
+  color: var(--color-modified);
 }
 /* blocks*/
 .block__heading {
   margin-top: 0;
 }
+.block__header {
+  text-align: center;
+  color: #fff;
+}
 .block--dark {
-  background: #000;
   color: #768586;
 }
 .block--dark .block__heading {
@@ -231,4 +238,23 @@ p {
 }
 .block--skewed-left {
   clip-path: polygon(0% 0%, 100% 0, 100% 70%, 0 100%, 0% 80%);
+}
+/* Services */
+/* .container .services {
+  margin: 20px;
+  text-align: center;
+} */
+.services {
+  display: grid;
+  margin: 10px;
+  border-radius: 10px;
+  border: 1px solid #fff;
+  text-align: center;
+}
+.service__heading {
+  color: #fff;
+}
+.services .icon {
+  margin-top: 20px;
+  width: 100%;
 }
