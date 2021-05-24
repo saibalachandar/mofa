@@ -22,7 +22,6 @@ body {
   font-family: Inter, Arial, Helvetica, sans-serif;
   background: var(--color-fixed);
   font-size: 2.4rem;
-  height: 100vh;
   line-height: 1.5;
 }
 a {
@@ -322,5 +321,110 @@ span {
   }
   .about__content .icon {
     margin: 0 50px;
+  }
+}
+/* skills */
+
+.skill {
+  color: #fff;
+}
+.skill__heading {
+  text-align: center;
+  margin: 5rem 0;
+}
+.skill--modified {
+  display: flex;
+  margin: 1rem 0;
+}
+.program__base {
+  margin-top: 0;
+  opacity: 0.5;
+  padding: 5px;
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+.course__color {
+  color: #fff;
+  text-align: left;
+}
+.program__stage {
+  position: relative;
+  height: 5px;
+  width: 90%;
+  background: #1d1d1d;
+  margin: 0 10px;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.program__stage span {
+  height: 100%;
+  width: 90%;
+  background: linear-gradient(90deg, #00c9ff 10%, #b24592);
+  position: absolute;
+  border-radius: 10px;
+  left: 0;
+}
+.program__stage .progarm--html {
+  width: 90%;
+}
+.program__stage .progarm--css {
+  width: 85%;
+}
+.program__stage .progarm--js {
+  width: 80%;
+}
+
+.program__stage .progarm--motivaation {
+  width: 95%;
+}
+.program__stage .progarm--dedication {
+  width: 99%;
+}
+.program__stage span::before {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: -10px;
+  height: 20px;
+  width: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0;
+  border-right-width: 0;
+  border-top-color: rgb(20, 98, 243);
+}
+.program__stage span::after {
+  position: absolute;
+  right: 0;
+  top: -27px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+  background-color: rgb(20, 98, 243);
+  padding: 1px 8px;
+  border-radius: 3px;
+}
+.program__stage .progarm--html::after {
+  content: "90%";
+}
+.program__stage .progarm--css::after {
+  content: "90%";
+}
+.program__stage .progarm--js::after {
+  content: "85%";
+}
+
+.program__stage .progarm--motivaation::after {
+  content: "95%";
+}
+.program__stage .progarm--dedication::after {
+  content: "99%";
+}
+@media screen and (min-width: 768px) {
+  .course__color {
+    font-size: 2.5rem;
+  }
+  .skill__heading {
+    font-size: 4rem;
   }
 }
