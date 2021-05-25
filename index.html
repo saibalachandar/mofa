@@ -11,19 +11,24 @@
     />
     <link rel="stylesheet" href="/css/normalize.css" />
     <link rel="stylesheet" href="/css/styles.css" />
-    <!-- <link
+    <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
       integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
       crossorigin="anonymous"
-    /> -->
+    />
   </head>
   <body>
     <header class="navbar">
       <nav class="nav collapsible">
-        <a href="#"><img class="logo" src="/img/mofalogo.png" alt="logo" /></a>
-
-        <svg class="icon icon--primary nav--icon collapsible__chevron">
+        <div class="mofa--color">
+          <img class="logo" src="/img/mofalogo.png" alt="logo" />
+          <svg class="icon icon--primary">
+            <use xlink:href="img/sprite.svg#mofabrands"></use>
+          </svg>
+          <h2 class="mofa">oFa</h2>
+        </div>
+        <svg class="icon nav--icon collapsible__chevron">
           <use xlink:href="img/sprite.svg#sort"></use>
         </svg>
         <ul class="nav__list collapsible__content">
@@ -35,7 +40,392 @@
         </ul>
       </nav>
     </header>
+    <!-- hero -->
+    <section id="home" class="hero">
+      <div class="hero--change">
+        <header class="hero__header">
+          <h2 class="block__heading hero--design">
+            Hell<span>o!</span> ,I am WebDeveloper
+          </h2>
+          <p class="hero--special">
+            My Expertise is to Create and design websites and many more get
+            beautiful results forever
+          </p>
+        </header>
+        <div class="hero__img">
+          <svg class="icon hero__icon">
+            <use xlink:href="img/sprite.svg#programming"></use>
+          </svg>
+        </div>
+      </div>
+    </section>
 
+    <!-- about -->
+    <section id="about" class="container">
+      <header class="block__header">
+        <h2 class="block__heading block--profile">About Me</h2>
+        <p class="block__about">Who am I</p>
+      </header>
+      <div class="profile grid grid--1x2">
+        <div class="about">
+          <picture>
+            <source type="image/webp" srcset="img/saibala.webp 1x" />
+            <source type="image/png" srcset="img/saibala.png 1x" />
+            <img class="admin__img" src="/img/saibala.png" alt="Admin Photo" />
+          </picture>
+        </div>
+        <div class="about__content">
+          <h3 class="about__me">I'm <span>Saibalachandar</span></h3>
+
+          <p class="about__dedicate">
+            I'm a Web Developer and i am very Possionate and dedicated to my
+            work. I have ocquired the skills and knowledge your project a
+            success.
+          </p>
+          <div class="social__icon">
+            <a class="link" href="#">
+              <svg class="icon icon--primary">
+                <use xlink:href="img/sprite.svg#instagram"></use></svg
+            ></a>
+            <a class="link" href="#">
+              <svg class="icon icon--primary">
+                <use xlink:href="img/sprite.svg#facebook"></use></svg
+            ></a>
+
+            <a class="link" href="#">
+              <svg class="icon icon--primary">
+                <use xlink:href="img/sprite.svg#twitter"></use></svg
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- skills -->
+    <section id="skills" class="block">
+      <header class="block__header">
+        <h2 class="block__heading block--profile">Skills</h2>
+      </header>
+      <div class="profile grid grid--1x2">
+        <div class="skill">
+          <div class="skill__setion">
+            <h3 class="skill__heading">Professional Skills</h3>
+          </div>
+          <div class="skill__container skill--modified">
+            <svg class="icon icon--primary">
+              <use xlink:href="img/sprite.svg#html"></use>
+            </svg>
+            <div class="program">
+              <span class="course__color">Hypertext Markup Language</span>
+              <h4 class="program__base">i am very dedicated to my work</h4>
+            </div>
+          </div>
+          <div class="program__stage">
+            <span class="progarm--html"></span>
+          </div>
+
+          <div class="skill__container skill--modified">
+            <svg class="icon icon--primary">
+              <use xlink:href="img/sprite.svg#css3"></use>
+            </svg>
+            <div class="program">
+              <span class="course__color">Cascading Style Sheets</span>
+              <h4 class="program__base">i am very dedicated to my work</h4>
+            </div>
+          </div>
+          <div class="program__stage">
+            <span class="progarm--css"></span>
+          </div>
+          <div class="skill__container skill--modified">
+            <svg class="icon icon--primary">
+              <use xlink:href="img/sprite.svg#js"></use>
+            </svg>
+            <div class="program">
+              <span class="course__color">JavaScript</span>
+              <h4 class="program__base">i am very dedicated to my work</h4>
+            </div>
+          </div>
+          <div class="program__stage">
+            <span class="progarm--js"></span>
+          </div>
+          <div class="skill__language"></div>
+        </div>
+        <div class="skill">
+          <div class="skill__setion">
+            <h3 class="skill__heading">Personal skills</h3>
+          </div>
+          <div class="skill__container skill--modified">
+            <svg class="icon icon--primary">
+              <use xlink:href="img/sprite.svg#team"></use>
+            </svg>
+            <div class="program">
+              <span class="course__color">Team Work</span>
+              <h4 class="program__base">i am very dedicated to my work</h4>
+            </div>
+          </div>
+          <div class="program__stage">
+            <span class="progarm--html"></span>
+          </div>
+
+          <div class="skill__container skill--modified">
+            <svg class="icon icon--primary">
+              <use xlink:href="img/sprite.svg#motivation"></use>
+            </svg>
+            <div class="program">
+              <span class="course__color">Seft Motivaation</span>
+              <h4 class="program__base">i am very dedicated to my work</h4>
+            </div>
+          </div>
+          <div class="program__stage">
+            <span class="progarm--motivaation"></span>
+          </div>
+          <div class="skill__container skill--modified">
+            <svg class="icon icon--primary">
+              <use xlink:href="img/sprite.svg#dedication"></use>
+            </svg>
+            <div class="program">
+              <span class="course__color">Dedication</span>
+              <h4 class="program__base">i am very dedicated to my work</h4>
+            </div>
+          </div>
+          <div class="program__stage">
+            <span class="progarm--dedication"></span>
+          </div>
+          <div class="skill__language"></div>
+        </div>
+      </div>
+    </section>
+    <!-- team -->
+    <section id="team" class="progress block--skewed-left">
+      <header class="block__header">
+        <h2 class="block__heading">My team</h2>
+      </header>
+      <div class="maincard">
+        <div class="card">
+          <div class="img">
+            <picture>
+              <source type="image/webp" srcset="img/suryaa.webp 1x" />
+              <source type="image/png" srcset="img/suryaa.png 1x" />
+              <img class="team__img" src="/img/surya.png" alt="team" />
+            </picture>
+          </div>
+          <div class="card__info">
+            <h3 class="team__member"><span>S</span>uryaa</h3>
+            <p class="team__work">Excute</p>
+            <p class="card__develop">
+              I'm a client-side script and i am very dedicated to my work
+            </p>
+            <div class="social__icon">
+              <a class="link" href="#">
+                <svg class="icon icon--primary">
+                  <use xlink:href="img/sprite.svg#instagram"></use></svg
+              ></a>
+              <a class="link" href="#">
+                <svg class="icon icon--primary">
+                  <use xlink:href="img/sprite.svg#facebook"></use></svg
+              ></a>
+
+              <a class="link" href="#">
+                <svg class="icon icon--primary">
+                  <use xlink:href="img/sprite.svg#twitter"></use></svg
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="img">
+            <picture>
+              <source type="image/webp" srcset="img/nithish.webp 1x" />
+              <source type="image/png" srcset="img/nithish.png 1x" />
+              <img class="team__img" src="/img/nithish.png" alt="team" />
+            </picture>
+          </div>
+          <div class="card__info">
+            <h3 class="team__member man--modified">
+              <span>N</span>ithish kumar
+            </h3>
+            <p class="team__work">Server-side</p>
+            <p class="card__develop">
+              I'm a Server-side script and i am very dedicated to my work
+            </p>
+            <div class="social__icon">
+              <a class="link" href="#">
+                <svg class="icon icon--primary">
+                  <use xlink:href="img/sprite.svg#instagram"></use></svg
+              ></a>
+              <a class="link" href="#">
+                <svg class="icon icon--primary">
+                  <use xlink:href="img/sprite.svg#facebook"></use></svg
+              ></a>
+
+              <a class="link" href="#">
+                <svg class="icon icon--primary">
+                  <use xlink:href="img/sprite.svg#twitter"></use></svg
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="img">
+            <picture>
+              <source type="image/webp" srcset="img/manoj.webp 1x" />
+              <source type="image/png" srcset="img/manoj.png 1x" />
+              <img class="team__img" src="/img/manoj.png" alt="team" />
+            </picture>
+          </div>
+          <div class="card__info">
+            <h3 class="team__member"><span>M</span>anoj</h3>
+            <p class="team__work">UI/UX Designer</p>
+            <p class="card__develop">
+              I'm a UI/UX Designer and i am very dedicated to my work
+            </p>
+            <div class="social__icon">
+              <a class="link" href="#">
+                <svg class="icon icon--primary">
+                  <use xlink:href="img/sprite.svg#instagram"></use></svg
+              ></a>
+              <a class="link" href="#">
+                <svg class="icon icon--primary">
+                  <use xlink:href="img/sprite.svg#facebook"></use></svg
+              ></a>
+
+              <a class="link" href="#">
+                <svg class="icon icon--primary">
+                  <use xlink:href="img/sprite.svg#twitter"></use></svg
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="img">
+            <picture>
+              <source type="image/webp" srcset="img/sivasurya.webp 1x" />
+              <source type="image/png" srcset="img/sivasurya.png 1x" />
+              <img class="team__img" src="/img/sivasuryaa.png" alt="team" />
+            </picture>
+          </div>
+          <div class="card__info">
+            <h3 class="team__member"><span>S</span>iva surya</h3>
+            <p class="team__work">Backend developer</p>
+            <p class="card__develop">
+              I'm a Backend developer and i am very dedicated to my work
+            </p>
+            <div class="social__icon">
+              <div class="social__icon">
+                <a class="link" href="#">
+                  <svg class="icon icon--primary">
+                    <use xlink:href="img/sprite.svg#instagram"></use></svg
+                ></a>
+                <a class="link" href="#">
+                  <svg class="icon icon--primary">
+                    <use xlink:href="img/sprite.svg#facebook"></use></svg
+                ></a>
+
+                <a class="link" href="#">
+                  <svg class="icon icon--primary">
+                    <use xlink:href="img/sprite.svg#twitter"></use></svg
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- services -->
+    <section class="block block--dark">
+      <header class="block__header">
+        <h2 class="block__heading">My Services</h2>
+      </header>
+      <div class="container grid grid--1x2 grid--1x3">
+        <div class="services">
+          <svg class="icon icon--primary">
+            <use xlink:href="img/sprite.svg#code"></use>
+          </svg>
+          <h3 class="service__heading"><span>web</span> development</h3>
+          <p>
+            Modern and Moblie ready website that will help you reach all your
+            marketing
+          </p>
+        </div>
+        <div class="services">
+          <svg class="icon icon--primary">
+            <use xlink:href="img/sprite.svg#laptop"></use>
+          </svg>
+          <h3 class="service__heading"><span>Graphic</span> Designing</h3>
+          <p>
+            Modern and Moblie ready website that will help you reach all your
+            marketing
+          </p>
+        </div>
+        <div class="services">
+          <svg class="icon icon--primary">
+            <use xlink:href="img/sprite.svg#apple"></use>
+          </svg>
+          <h3 class="service__heading"><span>App </span> Developing</h3>
+          <p>
+            Modern and Moblie ready website that will help you reach all your
+            marketing
+          </p>
+        </div>
+        <div class="services">
+          <svg class="icon icon--primary">
+            <use xlink:href="img/sprite.svg#camera"></use>
+          </svg>
+          <h3 class="service__heading"><span>Photo</span> Graphy</h3>
+          <p>
+            Modern and Moblie ready website that will help you reach all your
+            marketing
+          </p>
+        </div>
+        <div class="services">
+          <svg class="icon icon--primary">
+            <use xlink:href="img/sprite.svg#video"></use>
+          </svg>
+          <h3 class="service__heading"><span>Video</span> Editing</h3>
+          <p>
+            Modern and Moblie ready website that will help you reach all your
+            marketing
+          </p>
+        </div>
+        <div class="services">
+          <svg class="icon icon--primary">
+            <use xlink:href="img/sprite.svg#seo"></use>
+          </svg>
+          <h3 class="service__heading"><span>SEO</span> Export</h3>
+          <p>
+            Modern and Moblie ready website that will help you reach all your
+            marketing
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- foooter -->
+    <footer class="footer">
+      <div class="grid grid--1x2 grid--1x3 footer__section">
+        <div class="mofa--color">
+          <img class="logo" src="/img/mofalogo.png" alt="logo" />
+          <svg class="icon icon--primary">
+            <use xlink:href="img/sprite.svg#mofabrands"></use>
+          </svg>
+          <h2 class="mofa">oFaTechonlogy</h2>
+        </div>
+        <h2 class="copy__right">@copyright MofaTechonlogy</h2>
+        <div class="social__icon">
+          <a class="link" href="#">
+            <svg class="icon icon--primary">
+              <use xlink:href="img/sprite.svg#instagram"></use></svg
+          ></a>
+          <a class="link" href="#">
+            <svg class="icon icon--primary">
+              <use xlink:href="img/sprite.svg#facebook"></use></svg
+          ></a>
+
+          <a class="link" href="#">
+            <svg class="icon icon--primary">
+              <use xlink:href="img/sprite.svg#twitter"></use></svg
+          ></a>
+        </div>
+      </div>
+    </footer>
     <script src="/js/main.js"></script>
   </body>
 </html>

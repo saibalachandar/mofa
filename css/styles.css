@@ -453,11 +453,23 @@ span {
   align-items: center;
   flex-wrap: wrap;
   /* padding: 0 1rem; */
-  background: var(--color-body);
+  /* background: var(--color-body); */
 }
+.mofa--color {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mofa {
+  margin: 0;
+  font-size: 3rem;
+}
+
 .logo {
-  width: 13rem;
-  height: 7rem;
+  width: 5rem;
+  height: 5rem;
+  padding: 5px;
+  margin: 0 10px;
 }
 .nav__list {
   width: 100%;
@@ -465,9 +477,10 @@ span {
   text-align: center;
 }
 .nav--icon {
-  transform: translate(-50%, -20%) rotateX(-200deg);
+  transform: translate(-50%, -10%) rotateX(-180deg);
   color: #fff;
   transition: transform 0.5s;
+  width: 3rem;
 }
 .list__item {
   margin: 0 0 8px 0;
@@ -487,7 +500,7 @@ span {
   transition: max-height 0.3s;
 }
 .collapsible--expanded .collapsible__chevron {
-  transform: translate(-50%, -20%) rotateY(-360deg);
+  transform: translate(-50%, -10%) rotateY(-360deg);
 }
 .collapsible--expanded .collapsible__content {
   max-height: 100vh;
@@ -496,6 +509,11 @@ span {
   .collapsible__chevron {
     display: none;
   }
+  .logo {
+    width: 7rem;
+    height: 7rem;
+  }
+
   .nav__list {
     width: auto;
     display: flex;
@@ -508,4 +526,86 @@ span {
   .list__item {
     padding: 0 1rem;
   }
+}
+@media screen and (min-width: 1024px) {
+  .list__item {
+    padding: 0 2rem;
+  }
+}
+/* hero */
+.hero {
+  /* background-image: url(/img/background.jpg); */
+  /* background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; */
+  background: linear-gradient(90deg, #00c9ff 10%, #b24592);
+  text-align: center;
+  color: #fff;
+  height: calc(90vh - 20px);
+}
+.hero--design {
+  color: #fff;
+  margin: 0;
+  padding: 10px 0;
+}
+.hero--special {
+  opacity: 0.5;
+}
+.hero--design span {
+  color: var(--color-primary);
+}
+.hero__icon {
+  width: 70%;
+  height: 45%;
+}
+@media screen and (max-width: 768px) {
+  .hero {
+    clip-path: polygon(0 0, 100% 0%, 100% 90%, 0 100%, 0 100%);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero__icon {
+    width: 100%;
+    height: 100%;
+  }
+  .hero--design {
+    font-size: 5rem;
+  }
+
+  .hero--design span {
+    font-size: 7rem;
+  }
+}
+.mofa {
+  color: #fff;
+  font-size: 2.5rem;
+}
+/* footer */
+.footer {
+  display: grid;
+  text-align: center;
+  margin-top: 2rem;
+  background: var(--color-back);
+  justify-content: center;
+  align-content: center;
+}
+.footer .logo {
+  margin: 0;
+}
+
+.copy__right {
+  opacity: 0.5;
+  font-size: 2rem;
+  color: #fff;
+  margin: 3rem;
+}
+.footer .social__icon .icon {
+  width: 7rem;
+  margin: 1rem 0;
 }
