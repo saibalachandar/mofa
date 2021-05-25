@@ -1,3 +1,5 @@
+@import "./normalize.css";
+
 :root {
   --color-primary: #fc5c7d;
   --color-body: #041440;
