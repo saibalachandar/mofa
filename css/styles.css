@@ -84,18 +84,18 @@ p {
   font-size: 1.8rem;
   font-weight: 600;
   text-transform: uppercase;
-  padding: 2rem 3rem;
+  padding: 1rem 3rem;
   border: 0;
   border-radius: 40px;
   cursor: pointer;
   white-space: nowrap;
 }
 .btn--primary {
-  background-color: var(--color-primary);
+  background-color: var(--color--light);
   color: #fff;
 }
 .btn--primary:hover {
-  background: #fd24c7;
+  background: var(--color-primary);
 }
 @media screen and (min-width: 1025px) {
   .btn {
@@ -126,7 +126,7 @@ p {
   background: #fff;
 }
 .progress .block__heading {
-  color: var(--color-modified);
+  color: var(--color-primary);
 }
 .maincard {
   display: flex;
@@ -312,6 +312,7 @@ span {
   font-weight: 300;
 }
 .block--profile {
+  margin-top: 9rem;
   margin-bottom: 0;
   color: var(--color-primary);
 }
@@ -346,7 +347,7 @@ span {
 }
 .skill__heading {
   text-align: center;
-  margin: 5rem 0;
+  margin: 0 0 5rem;
 }
 .skill--modified {
   display: flex;
@@ -560,7 +561,7 @@ span {
 }
 @media screen and (max-width: 768px) {
   .hero {
-    clip-path: polygon(0 0, 100% 0%, 100% 90%, 0 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 0%, 100% 95%, 0 100%, 0 100%);
   }
 }
 
