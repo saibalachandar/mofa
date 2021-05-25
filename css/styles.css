@@ -22,6 +22,7 @@ body {
   font-family: Inter, Arial, Helvetica, sans-serif;
   background: var(--color-fixed);
   font-size: 2.4rem;
+  height: 200vh;
   line-height: 1.5;
 }
 a {
@@ -121,18 +122,22 @@ p {
   max-width: 1140px;
   margin: 0 auto;
 }
-
+.progress {
+  background: #fff;
+}
+.progress .block__heading {
+  color: var(--color-modified);
+}
 .maincard {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 2rem;
-  background: #fff;
 }
 .card {
   width: 300px;
   height: 500px;
-  margin: 30px 20px;
+  margin: 35px 20px;
   /* overflow: hidden; */
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 40px 0;
@@ -141,15 +146,20 @@ p {
   position: relative;
   transition: transform 0.5s ease-out;
 }
-.card:hover {
-  transform: scale(1.1);
+/* .card:hover {
+  transform: scale(1);
+} */
+@media screen and (min-width: 400px) {
+  .card:hover {
+    transform: scale(1.1);
+  }
 }
 
 .card::before {
   content: "";
   left: -25px;
   background-color: var(--color--light);
-  bottom: -5px;
+  bottom: -2px;
   width: 30px;
   height: 5px;
   position: absolute;
@@ -161,7 +171,7 @@ p {
   content: "";
   left: -12px;
   background-color: var(--color--light);
-  bottom: -18px;
+  bottom: -15px;
   width: 30px;
 
   height: 5px;
@@ -219,12 +229,14 @@ span {
   color: var(--color-modified);
 }
 /* blocks*/
+
 .block__heading {
   margin-top: 0;
 }
 .block__header {
   text-align: center;
   color: #fff;
+  margin: 5rem 0;
 }
 .block--dark {
   color: #768586;
@@ -232,11 +244,13 @@ span {
 .block--dark .block__heading {
   color: #fff;
 }
-.block--skewed-right {
-  clip-path: polygon(0% 0%, 100% 0, 100% 70%, 0 100%, 0% 100%);
-}
+/* .block--skewed-right {
+  padding: 0 0 20rem 0;
+  clip-path: polygon(0% 0%, 100% 0, 100% 95%, 0 100%, 0% 100%);
+} */
 .block--skewed-left {
-  clip-path: polygon(0% 0%, 100% 0, 100% 70%, 0 100%, 0% 80%);
+  padding: 10rem 0;
+  clip-path: polygon(0 5%, 100% 0%, 100% 100%, 0 100%, 0 100%);
 }
 /* Services */
 /* .container .services {
@@ -264,6 +278,7 @@ span {
 
 .admin__img {
   width: 100%;
+  height: 100%;
   border-bottom: 7px solid var(--color-secondary);
   border-right: 7px solid var(--color-modified);
 }
@@ -327,6 +342,7 @@ span {
 
 .skill {
   color: #fff;
+  margin-bottom: 7rem;
 }
 .skill__heading {
   text-align: center;
@@ -346,6 +362,7 @@ span {
 .course__color {
   color: #fff;
   text-align: left;
+  margin: 0 1rem;
 }
 .program__stage {
   position: relative;
@@ -369,10 +386,10 @@ span {
   width: 90%;
 }
 .program__stage .progarm--css {
-  width: 85%;
+  width: 90%;
 }
 .program__stage .progarm--js {
-  width: 80%;
+  width: 85%;
 }
 
 .program__stage .progarm--motivaation {
@@ -428,3 +445,4 @@ span {
     font-size: 4rem;
   }
 }
+/* navBar */
