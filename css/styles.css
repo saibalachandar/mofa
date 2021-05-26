@@ -247,7 +247,7 @@ span {
 }
 .block--dark {
   color: #768586;
-  height: 100vh;
+  /* height: 100vh; */
 }
 .block--dark .block__heading {
   color: #fff;
