@@ -11,6 +11,7 @@
 }
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -24,7 +25,7 @@ body {
   font-family: Inter, Arial, Helvetica, sans-serif;
   background: var(--color-fixed);
   font-size: 2.4rem;
-  height: 200vh;
+  /* height: 200vh; */
   line-height: 1.5;
 }
 a {
@@ -92,6 +93,10 @@ p {
   cursor: pointer;
   white-space: nowrap;
 }
+.btn a {
+  color: #fff;
+}
+
 .btn--primary {
   background-color: var(--color--light);
   color: #fff;
@@ -274,6 +279,7 @@ span {
   width: 100%;
 }
 /* About Section  */
+
 .about {
   margin: 30px 30px 0 30px;
 }
@@ -455,12 +461,12 @@ span {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  /* padding: 0 1rem; */
+  padding: 0.5rem;
   /* background: var(--color-body); */
 }
 .mofa--color {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
 }
 .mofa {
@@ -544,7 +550,7 @@ span {
   background: linear-gradient(90deg, #00c9ff 10%, #b24592);
   text-align: center;
   color: #fff;
-  height: calc(90vh - 20px);
+  height: calc(90vh - 25px);
 }
 .hero--design {
   color: #fff;
@@ -552,13 +558,13 @@ span {
   padding: 10px 0;
 }
 .hero--special {
-  opacity: 0.5;
+  opacity: 0.6;
 }
 .hero--design span {
   color: var(--color-primary);
 }
 .hero__icon {
-  width: 70%;
+  width: 100%;
   height: 45%;
 }
 @media screen and (max-width: 768px) {
@@ -612,3 +618,4 @@ span {
   width: 7rem;
   margin: 1rem 0;
 }
+/* @media screen and (min-width:) */
