@@ -25,7 +25,7 @@ body {
   font-family: Inter, Arial, Helvetica, sans-serif;
   background: var(--color-fixed);
   font-size: 2.4rem;
-  /* height: 200vh; */
+  height: 200vh;
   line-height: 1.5;
 }
 a {
@@ -247,6 +247,7 @@ span {
 }
 .block--dark {
   color: #768586;
+  height: 100vh;
 }
 .block--dark .block__heading {
   color: #fff;
@@ -526,6 +527,7 @@ span {
   .nav__list {
     width: auto;
     display: flex;
+
     max-height: 100%;
     margin: 0 3rem;
   }
